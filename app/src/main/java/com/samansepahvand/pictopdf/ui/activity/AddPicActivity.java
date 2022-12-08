@@ -1,6 +1,5 @@
-package com.samansepahvand.pictopdf;
+package com.samansepahvand.pictopdf.ui.activity;
 
-import static android.Manifest.permission.CAMERA;
 import static android.Manifest.permission.MANAGE_EXTERNAL_STORAGE;
 import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
@@ -9,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import android.Manifest;
 import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.Context;
@@ -31,7 +29,6 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.ContextThemeWrapper;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
@@ -40,15 +37,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.samansepahvand.pictopdf.R;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.security.auth.login.LoginException;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class AddPicActivity extends AppCompatActivity implements View.OnClickListener {
     public static final int GALLERY_PICTURE = 1;
     private static final int PERMISSION_REQUEST_CODE = 303;
     Button btn_select, btn_convert;
@@ -68,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_add_pic);
         init();
         listener();
 

@@ -3,9 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/b_bottom_corner.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/b_center_corner.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/b_circle.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/b_left_corner.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/b_right_corner.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/b_top_corner.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/card_background_all_radius_white.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/ic_baseline_slideshow_24.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/drawable/shape_background_radius.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/activity_main.xml" value="0.178125" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/activity_main2.xml" value="0.1921875" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/activity_main3.xml" value="0.1921875" />
         <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/activity_pdfview.xml" value="0.178125" />
         <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/fgfdg.xml" value="0.178125" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/main.xml" value="0.25" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/recently_item.xml" value="0.25" />
+        <entry key="..\:/Users/shant/AndroidStudioProjects/PicToPdf/app/src/main/res/layout/shape_item.xml" value="0.33" />
       </map>
     </option>
   </component>
