@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
 
-<Button
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:id="@+id/btn_select"
-android:text="Select Image"/>
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image" />
 
 
 

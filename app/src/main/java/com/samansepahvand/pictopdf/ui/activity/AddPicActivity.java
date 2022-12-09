@@ -46,20 +46,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddPicActivity extends AppCompatActivity implements View.OnClickListener {
+
+
     public static final int GALLERY_PICTURE = 1;
     private static final int PERMISSION_REQUEST_CODE = 303;
-    Button btn_select, btn_convert;
-    ImageView iv_image;
-    boolean boolean_permission;
-    boolean boolean_save;
-    Bitmap bitmap;
-    public static final int REQUEST_PERMISSIONS = 1;
+    private static  final int PICK_IMAGE_MULTIPLE = 1;
 
+    private  Button btn_select;
+    private  boolean boolean_save;
+    private  Bitmap bitmap;
 
-    int PICK_IMAGE_MULTIPLE = 1;
-    String imageEncoded;
-    List<String> imagesEncodedList;
-    ArrayList<Uri>   mArrayUri = new ArrayList<Uri>();
+    private String imageEncoded;
+    private List<String> imagesEncodedList;
+    private ArrayList<Uri>  mArrayUri = new ArrayList();
 
 
     @Override
@@ -85,14 +84,12 @@ public class AddPicActivity extends AppCompatActivity implements View.OnClickLis
         return (result == PackageManager.PERMISSION_GRANTED) && result2 == PackageManager.PERMISSION_GRANTED && result3 == PackageManager.PERMISSION_GRANTED;
 
     }
-
     private void requestPermission() {
 
         ActivityCompat.requestPermissions(this, new String[]{READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE, MANAGE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_CODE);
 
 
     }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -128,7 +125,6 @@ public class AddPicActivity extends AppCompatActivity implements View.OnClickLis
                 break;
         }
     }
-
     private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
         Typeface face = Typeface.createFromAsset(getAssets(), "fonts/iran_sans.ttf");
         TextView content = new TextView(this);
@@ -162,13 +158,12 @@ public class AddPicActivity extends AppCompatActivity implements View.OnClickLis
 
     private void init() {
         btn_select = (Button) findViewById(R.id.btn_select);
-        btn_convert = (Button) findViewById(R.id.btn_convert);
-        iv_image = (ImageView) findViewById(R.id.iv_image);
+
     }
 
     private void listener() {
         btn_select.setOnClickListener(this);
-        btn_convert.setOnClickListener(this);
+
     }
 
     @Override
@@ -176,16 +171,8 @@ public class AddPicActivity extends AppCompatActivity implements View.OnClickLis
         switch (view.getId()) {
             case R.id.btn_select:
 
-//                Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-//                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-//                startActivityForResult(intent, GALLERY_PICTURE);
 
 
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_MULTIPLE);
 
                 break;
             case R.id.btn_convert:
@@ -239,7 +226,7 @@ public class AddPicActivity extends AppCompatActivity implements View.OnClickLis
 
 
             document.writeTo(new FileOutputStream(file));
-            btn_convert.setText("Check PDF");
+          //  btn_convert.setText("Check PDF");
             boolean_save = true;
 
         } catch (IOException e) {
@@ -304,8 +291,8 @@ public class AddPicActivity extends AppCompatActivity implements View.OnClickLis
                     cursor.close();
 
                bitmap = BitmapFactory.decodeFile(imageEncoded);
-                iv_image.setImageBitmap(bitmap);
-                btn_convert.setClickable(true);
+//                iv_image.setImageBitmap(bitmap);
+//                btn_convert.setClickable(true);
 
                     mArrayUri.add(mImageUri);
 
