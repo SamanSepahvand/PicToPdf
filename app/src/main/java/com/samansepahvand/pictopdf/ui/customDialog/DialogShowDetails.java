@@ -115,9 +115,8 @@ public class DialogShowDetails extends Dialog implements View.OnClickListener, R
 
         btnConfirm.setOnClickListener(this);
         imgCloseDialog.setOnClickListener(this);
-
-
         radioGroup.setOnCheckedChangeListener(this);
+
     }
 
 
@@ -269,7 +268,7 @@ public class DialogShowDetails extends Dialog implements View.OnClickListener, R
         qualityTypes=radioButton.getText().toString();
 
         // on below line we are displaying a toast message.
-        Toast.makeText(mContext, "Selected Radio Button is : " + radioButton.getText(), Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(mContext, "Selected Radio Button is : " + radioButton.getText(), Toast.LENGTH_SHORT).show();
 
     }
 
