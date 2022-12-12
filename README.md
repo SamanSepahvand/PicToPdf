@@ -19,17 +19,12 @@
 # اسکرین شات ها
 
 
-[![ویدئو یوتبوب برنامه](http://s16.picofile.com/file/8412993676/tracerappLOGO.png)](https://www.youtube.com/watch?v=UCAB72ugAZ09MfEONwCJX8Mg)
+[![  my linkedin](https://github.com/SamanSepahvand/PicToPdf/blob/master/imgToPdfConverter.png?raw=true)](https://www.linkedin.com/in/saman-sepahvand-2ab3b01b8/)
 
 <br>
 
 <table>
 <tr>
-<td><img src="http://s16.picofile.com/file/8412023768/Screenshot_20201027_151751_TracerApp.jpg"></td>
-<td><img src="http://s17.picofile.com/file/8412023718/Screenshot_20201027_151638_TracerApp.jpg"></td>
-<td><img src="http://s17.picofile.com/file/8412023692/Screenshot_20201018_153005_TracerApp.jpg"></td>
-<td><img src="http://s17.picofile.com/file/8412023826/Screenshot_20201027_151852_TracerApp.jpg"></td>
-<td><img src="http://s16.picofile.com/file/8412023792/Screenshot_20201027_151836_TracerApp.jpg"></td>
 </tr>
 </table>
 </br>
